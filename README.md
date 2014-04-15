@@ -1,24 +1,25 @@
 # BooleanityValidator
 
-TODO: Write a gem description
+A boolean validator for Rails 4.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'booleanity_validator'
+    gem 'booleanity_validator', git: 'git@github.com:ma2gedev/booleanity_validator.git'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install booleanity_validator
-
 ## Usage
 
-TODO: Write usage instructions here
+```
+class Accounts < ActiveRecord::Base
+  validates :locked, booleanity: true
+  ...
+end
+```
 
 ## Contributing
 
